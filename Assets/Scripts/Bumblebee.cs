@@ -12,8 +12,7 @@ public class Bumblebee : MonoBehaviour
 
  
  Rigidbody m_Rigidbody;
- //private float _jumpTimer = -1f;
- //private float _jumpRate = 0.3f;
+
 
  public Vector3 jump;
  public float jumpForce = 1.0f;
@@ -102,29 +101,27 @@ public class Bumblebee : MonoBehaviour
                 {
                     transform.Rotate(Vector3.up * RotateSpeed * Time.deltaTime);
                 }
+
+                
+                if (transform.position.x < -165.9f)
+                { 
+                    transform.position = new Vector3(-165.9f, transform.position.y, transform.position.z);
+                }
             
+               if (transform.position.x > 672.4179f)
+               { 
+                   transform.position = new Vector3(672.4179f, transform.position.y, transform.position.z);
+               }
 
-       //     if (transform.position.x < -145f)
-       //     {
-       //         transform.position = new Vector3(-145f, transform.position.y, transform.position.z);
-       //     }
+              if (transform.position.z < -590.6694f)
+              {
+                  transform.position = new Vector3( transform.position.x, transform.position.y, -590.6694f);
+              }
             
-       //     if (transform.position.x > 23f)
-       //     {
-       //         transform.position = new Vector3(23f, transform.position.y, transform.position.z);
-       //     }
-
-       //     if (transform.position.z < -62f)
-       //     {
-       //         transform.position = new Vector3( transform.position.x, transform.position.y, -62f);
-
-       //   }
-            
-       //   if (transform.position.z > 62)
-       //   {
-       //       transform.position = new Vector3( transform.position.x, transform.position.y, 62f);
-
-       //   }
+              if (transform.position.z > 544.9294f)
+              {
+                  transform.position = new Vector3(transform.position.x, transform.position.y, 544.9294f);
+              }
 
 
 

@@ -12,14 +12,14 @@ public class UImanager : MonoBehaviour
 
     private void Start()
     {
-        _scoreText.text =  _score + "/20";
+        _scoreText.text = "Score: " + _score;
         
     }
 
     public void AddScore(int score)
     {
         _score += score;
-        _scoreText.text = _score + "/20";
+        _scoreText.text = "Score: " + _score;
 
     }
 
