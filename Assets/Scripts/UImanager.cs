@@ -19,6 +19,7 @@ public class UImanager : MonoBehaviour
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Bumblebee_Game"))
         {
             _score = 0;
+            _collect_count = 0;
         }
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Endscreen"))
@@ -42,11 +43,6 @@ public class UImanager : MonoBehaviour
     public void AddCount(int count)
     {
         _collect_count += count;
-    }
-
-    public void ShowMessage()
-    {
-        _message.text = "You collected all pollen. Hurry and bring them home!";
     }
 
 }
