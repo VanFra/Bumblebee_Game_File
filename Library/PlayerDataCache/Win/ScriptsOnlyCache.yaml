@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Bumblebee
+    - Collectibles
     - Menu
     - Pollen
     - UImanager
@@ -85,7 +86,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13154}
     - Class: 114
-      Script: {instanceID: 14086}
+      Script: {instanceID: 18044}
+    - Class: 114
+      Script: {instanceID: 19024}
+    - Class: 114
+      Script: {instanceID: 165274}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -103,6 +108,118 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 258
+      Script: {instanceID: 0}
+    Assets/Scenes/Endscreen.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11276}
+    - Class: 114
+      Script: {instanceID: 11286}
+    - Class: 114
+      Script: {instanceID: 11440}
+    - Class: 114
+      Script: {instanceID: 11482}
+    - Class: 114
+      Script: {instanceID: 11874}
+    - Class: 114
+      Script: {instanceID: 12270}
+    - Class: 114
+      Script: {instanceID: 12776}
+    - Class: 114
+      Script: {instanceID: 12814}
+    - Class: 114
+      Script: {instanceID: 13154}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+    Assets/Scenes/Manual.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11276}
+    - Class: 114
+      Script: {instanceID: 11286}
+    - Class: 114
+      Script: {instanceID: 11440}
+    - Class: 114
+      Script: {instanceID: 11482}
+    - Class: 114
+      Script: {instanceID: 11874}
+    - Class: 114
+      Script: {instanceID: 12270}
+    - Class: 114
+      Script: {instanceID: 12776}
+    - Class: 114
+      Script: {instanceID: 13154}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/Titlescreen.unity:
     - Class: 1
@@ -834,8 +951,16 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Collectibles
   platform: 5
   scenePathNames:
   - Assets/Scenes/Titlescreen.unity
+  - Assets/Scenes/Manual.unity
   - Assets/Scenes/Bumblebee_Game.unity
+  - Assets/Scenes/Endscreen.unity
   playerPath: C:/Users/Yuuni/OneDrive/Documents/Bumblebee.exe

@@ -8,8 +8,23 @@ public class Menu : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Bumblebee_Game");
     }
     
+    public void Quit_Game()
+    {
+        Application.Quit();
+    }
+    
+    public void ToTitlescreen()
+    {
+        SceneManager.LoadScene("Titlescreen");
 
+    }
+
+    public void Controls()
+    {
+        SceneManager.LoadScene("Manual");
+ 
+    }
 }

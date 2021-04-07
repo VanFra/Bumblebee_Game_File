@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Bumblebee : MonoBehaviour
@@ -17,13 +19,14 @@ public class Bumblebee : MonoBehaviour
  public Vector3 jump;
  public float jumpForce = 1.0f;
  public bool isGrounded;
+ 
  private AudioSource _buzzing;
 
 
  // Start is called before the first frame update
     void Start()
     {
-        transform.position = new Vector3(-135f, 7f, -1.68f);
+        transform.position = new Vector3(-117f, 19.5f, -2.26f);
         // From the Unity Documentation
         //Fetch the Rigidbody from the GameObject with this script attached
         m_Rigidbody = GetComponent<Rigidbody>();
@@ -38,18 +41,26 @@ public class Bumblebee : MonoBehaviour
         PlayerMovement();
         Jump();
         Buzzing();
+        
+        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
 
     }
 
     public void RelayScore(int score)
     {
         _uImanager.AddScore(score);
-        //_uImanager.ShowMessage();
-        
     }
 
-
-
+    public void RelayCount(int count)
+    {
+        _uImanager.AddCount(count);
+    }
+    
+    
     void OnCollisionStay()
     {
         isGrounded = true;
@@ -71,12 +82,12 @@ public class Bumblebee : MonoBehaviour
             if (isGrounded == false)
             {
                 _buzzing = GetComponent<AudioSource>();
-                _buzzing.volume = 0.3f;
+                _buzzing.volume = 0.8f;
                 _buzzing.pitch = 1.3f;
             }
             else
             {
-                _buzzing.volume = 0.1f;
+                _buzzing.volume = 0.5f;
                 _buzzing.pitch = 1.1f;
             }
 
@@ -122,15 +133,17 @@ public class Bumblebee : MonoBehaviour
               {
                   transform.position = new Vector3(transform.position.x, transform.position.y, 544.9294f);
               }
+              
+    }
+    
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Hive")
+        {
+            SceneManager.LoadScene("Endscreen");
 
-
-
-
-
-
-
-
-
+        }
 
     }
 
