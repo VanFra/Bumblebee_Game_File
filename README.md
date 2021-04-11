@@ -20,7 +20,6 @@ The game was made using Unity (Version 2019.4.22f1) and using C# programming. Ad
 The soundtrack was composed and played by M. Haberland.  
   
 INSTALLATION  
-To install the game you simply download the file and should be able to play it right away.  
-  
+To install the game you download the zip file "Game_Data.zip" unpack it on your computer and run the application "Bumblebee.exe"
   
 :copyright: M. Haberland und V. Franke  
